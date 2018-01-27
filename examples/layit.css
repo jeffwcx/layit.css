@@ -1,0 +1,65 @@
+.l-col {
+  display: flex;
+  flex-direction: row; }
+  .l-col.x-left {
+    justify-content: flex-start; }
+  .l-col.x-right {
+    justify-content: flex-end; }
+  .l-col.x-center {
+    justify-content: center; }
+  .l-col.x-between {
+    justify-content: space-between; }
+  .l-col.x-around {
+    justify-content: space-around; }
+  .l-col.y-top {
+    align-items: flex-start; }
+  .l-col.y-bottom {
+    align-items: flex-end; }
+  .l-col.y-center {
+    align-items: center; }
+  .l-col.y-baseline {
+    align-items: baseline; }
+  .l-col.y-stretch {
+    align-items: stretch; }
+  .l-col.multi {
+    flex-wrap: wrap; }
+  .l-col.m-top {
+    align-content: flex-start; }
+  .l-col.m-bottom {
+    align-content: flex-end; }
+  .l-col.m-center {
+    align-content: center; }
+  .l-col.m-between {
+    align-content: space-between; }
+  .l-col.m-around {
+    align-content: space-around; }
+  .l-col.m-strech {
+    align-content: stretch; }
+
+.l-v {
+  display: flex;
+  flex-flow: column wrap; }
+  .l-v.x-left {
+    justify-content: flex-start; }
+  .l-v.x-right {
+    justify-content: flex-end; }
+  .l-v.x-center {
+    justify-content: center; }
+  .l-v.x-between {
+    justify-content: space-between; }
+  .l-v.x-around {
+    justify-content: space-around; }
+  .l-v.v-top {
+    align-content: flex-start; }
+  .l-v.v-bottom {
+    align-content: flex-end; }
+  .l-v.v-center {
+    align-content: center; }
+  .l-v.v-between {
+    align-content: space-between; }
+  .l-v.v-around {
+    align-content: space-around; }
+  .l-v.v-stretch {
+    align-content: stretch; }
+
+/*# sourceMappingURL=layit.css.map */

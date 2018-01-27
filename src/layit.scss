@@ -1,0 +1,40 @@
+$h-dirs: (left: flex-start, right: flex-end, center: center, between: space-between, around: space-around);
+$v-dirs: (top: flex-start, bottom: flex-end, center: center, baseline: baseline, stretch: stretch);
+$v-dirs2: (top: flex-start, bottom: flex-end, center: center, between: space-between, around:space-around, stretch: stretch );
+$multi-dirs: (top: flex-start, bottom: flex-end, center: center, between: space-between, around: space-around, strech: stretch);
+@mixin h () {
+  @each $dirname, $dir in $h-dirs {
+    &.x-#{$dirname} {
+      justify-content: $dir;
+    }
+  }
+}
+.l-col {
+  display: flex;
+  flex-direction: row;
+  @include h();
+  @each $dirname, $dir in $v-dirs {
+    &.y-#{$dirname} {
+      align-items: $dir;
+    }
+  }
+  &.multi{
+    flex-wrap: wrap;
+  }
+  @each $dirname, $dir in $multi-dirs {
+    &.m-#{$dirname} {
+      align-content: $dir;
+    }
+  }
+}
+
+.l-v {
+  display: flex;
+  flex-flow: column wrap;
+  @include h();
+  @each $dirname, $dir in $v-dirs2 {
+    &.v-#{$dirname} {
+      align-content: $dir;
+    }
+  }
+}

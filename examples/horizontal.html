@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>水平布局</title>
+  <link rel="stylesheet" href="layit.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      overflow: auto;
+    }
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+    @media screen and (max-width: 800px) {
+      .container {
+        width: 100%;
+      }
+    }
+    .scroller {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .item {
+      padding: 20px 0;
+    }
+    .h-200 {
+      height: 200px;
+    }
+    .h-400 {
+      height: 400px;
+    }
+    .w-50 {
+      width: 50px;
+    }
+    .w-100 {
+      width: 100px;
+    }
+    .w-300 {
+      width: 400px;
+    }
+    .w-600 {
+      width: 600px;
+    }
+    .item h2 {
+      line-height: 30px;
+      padding: 8px 0;
+      box-sizing: border-box;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+    }
+    .c1 {
+      background: #ffe58f;
+    }
+    .c2 {
+      background: #fffb8f;
+    }
+    .c3 {
+      background: #eaff8f;
+    }
+    .c4 {
+      background: #ffa39e;
+    }
+    .c5 {
+      background: #b7eb8f;
+    }
+    .c6 {
+      background: #87e8de;
+    }
+    .c7 {
+      background: #91d5ff;
+    }
+    .c8 {
+      background: #adc6ff;
+    }
+    .c9 {
+      background: #d3adf7;
+    }
+    .is-25 {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+    }
+    .is-50 {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+    .is-75 {
+      width: 75px;
+      height: 75px;
+      line-height: 75px;
+    }
+    .is-125 {
+      width: 125px;
+      height: 125px;
+      line-height: 125px;
+    }
+    .is-150 {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+    }
+    .is-175 {
+      width: 175px;
+      height: 175px;
+      line-height: 175px;
+    }
+    .is-200 {
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+    }
+    .is-250 {
+      width: 250px;
+      height: 250px;
+      line-height: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>单行布局</h1>
+    <div class="item">
+      <h2>|口口口口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 布局方式（默认）</h2>
+      <div class="l-col">
+        <div class="box c1"></div>
+        <div class="box c7"></div>
+        <div class="box c5"></div>
+        <div class="box c4"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;口口口口| 布局方式</h2>
+      <div class="l-col x-right">
+        <div class="box c1"></div>
+        <div class="box c7"></div>
+        <div class="box c5"></div>
+        <div class="box c4"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>|&nbsp;&nbsp;&nbsp;口口口口&nbsp;&nbsp;&nbsp;| 布局方式</h2>
+      <div class="l-col x-center">
+        <div class="box c1"></div>
+        <div class="box c7"></div>
+        <div class="box c5"></div>
+        <div class="box c4"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>|口&nbsp;&nbsp;口&nbsp;&nbsp;口&nbsp;&nbsp;口| 布局方式</h2>      
+      <div class="l-col x-between">
+        <div class="box c1"></div>
+        <div class="box c7"></div>
+        <div class="box c5"></div>
+        <div class="box c4"></div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <h2>|&nbsp;口&nbsp;口&nbsp;口&nbsp;口&nbsp;| 布局方式</h2>      
+      <div class="l-col h-around">
+        <div class="box c1"></div>
+        <div class="box c7"></div>
+        <div class="box c5"></div>
+        <div class="box c4"></div>
+      </div>
+    </div>
+    <h1>水平方向上的基线</h1>
+    <div class="item">
+      <h2>元素顶部（默认）</h2>
+      <div class="l-col y-top h-200 c8">
+        <div class="box c1 is-125" style="font-size: 40px;">A</div>
+        <div class="box c7" style="font-size: 30px;">B</div>
+        <div class="box c5 is-75" style="font-size: 20px;">C</div>
+        <div class="box c4 is-50" style="font-size: 12px;">D</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>元素中部</h2>
+      <div class="l-col y-center h-200 c8">
+        <div class="box c1 is-125" style="font-size: 40px;">A</div>
+        <div class="box c7" style="font-size: 30px;">B</div>
+        <div class="box c5 is-75" style="font-size: 20px;">C</div>
+        <div class="box c4 is-50" style="font-size: 12px;">D</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>元素底部</h2>
+      <div class="l-col y-bottom h-200 c8">
+        <div class="box c1 is-125" style="font-size: 40px;">A</div>
+        <div class="box c7" style="font-size: 30px;">B</div>
+        <div class="box c5 is-75" style="font-size: 20px;">C</div>
+        <div class="box c4 is-50" style="font-size: 12px;">D</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <h2>文字baseline</h2>
+      <div class="l-col y-baseline h-200 c8">
+        <div class="box c1 is-125" style="font-size: 40px;">A</div>
+        <div class="box c7" style="font-size: 30px;">B</div>
+        <div class="box c5 is-75" style="font-size: 20px;">C</div>
+        <div class="box c4 is-50" style="font-size: 12px;">D</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>拉伸,只有在子元素的不设高的情况下使用</h2>
+      <div class="l-col y-stretch h-200 c8">
+        <div class="c1" style="font-size: 40px; width: 125px;">A</div>
+        <div class="c7" style="font-size: 30px; width: 100px;">B</div>
+        <div class="c5" style="font-size: 20px; width: 75px;">C</div>
+        <div class="c4" style="font-size: 12px; width: 50px;">D</div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <h1>多行布局</h1>
+    <div class="item">
+      <h2>置顶</h2>
+      <div class="scroller">
+        <div class="l-col multi m-top w-600 h-400 c8">
+          <div class="box c1">A</div>
+          <div class="box c7">B</div>
+          <div class="box c5">C</div>
+          <div class="box c4">D</div>
+          <div class="box c3">E</div>
+          <div class="box c6">F</div>
+          <div class="box c9">G</div>
+          <div class="box c1">H</div>
+          <div class="box c7">I</div>
+          <div class="box c5">J</div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>居中</h2>
+      <div class="scroller">
+        <div class="l-col multi m-center w-600 h-400 c8">
+          <div class="box c1">A</div>
+          <div class="box c7">B</div>
+          <div class="box c5">C</div>
+          <div class="box c4">D</div>
+          <div class="box c3">E</div>
+          <div class="box c6">F</div>
+          <div class="box c9">G</div>
+          <div class="box c1">H</div>
+          <div class="box c7">I</div>
+          <div class="box c5">J</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="item">
+      <h2>置底</h2>
+      <div class="scroller">
+        <div class="l-col multi m-bottom w-600 h-400 c8">
+          <div class="box c1">A</div>
+          <div class="box c7">B</div>
+          <div class="box c5">C</div>
+          <div class="box c4">D</div>
+          <div class="box c3">E</div>
+          <div class="box c6">F</div>
+          <div class="box c9">G</div>
+          <div class="box c1">H</div>
+          <div class="box c7">I</div>
+          <div class="box c5">J</div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>between</h2>
+      <div class="scroller">
+        <div class="l-col multi m-between w-600 h-400 c8">
+          <div class="box c1">A</div>
+          <div class="box c7">B</div>
+          <div class="box c5">C</div>
+          <div class="box c4">D</div>
+          <div class="box c3">E</div>
+          <div class="box c6">F</div>
+          <div class="box c9">G</div>
+          <div class="box c1">H</div>
+          <div class="box c7">I</div>
+          <div class="box c5">J</div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>around</h2>
+      <div class="scroller">
+        <div class="l-col multi m-around w-600 h-400 c8">
+          <div class="box c1">A</div>
+          <div class="box c7">B</div>
+          <div class="box c5">C</div>
+          <div class="box c4">D</div>
+          <div class="box c3">E</div>
+          <div class="box c6">F</div>
+          <div class="box c9">G</div>
+          <div class="box c1">H</div>
+          <div class="box c7">I</div>
+          <div class="box c5">J</div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>拉伸，同样子元素不要设置高度</h2>
+      <div class="scroller">
+        <div class="l-col multi m-stretch w-600 h-400 c8">
+          <div class="c1 w-100">A</div>
+          <div class="c7 w-100">B</div>
+          <div class="c5 w-100">C</div>
+          <div class="c4 w-100">D</div>
+          <div class="c3 w-100">E</div>
+          <div class="c6 w-100">F</div>
+          <div class="c9 w-100">G</div>
+          <div class="c1 w-100">H</div>
+          <div class="c7 w-100">I</div>
+          <div class="c5 w-100">J</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <h1>常见布局示例</h1>
+    <div class="item">
+      <h2>上下左右居中</h2>
+      <div class="scroller">
+        <div class="l-col x-center y-center w-600 h-400 c8">
+          <div class="box c1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>双飞翼布局</h2>
+      <div class="l-col">
+        <div class="left w-100 h-200 c1"></div>
+        <div class="content c7" style="flex-grow: 1;"></div>
+        <div class="right w-100 h-200 c5"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

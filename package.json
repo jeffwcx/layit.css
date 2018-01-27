@@ -1,0 +1,25 @@
+{
+  "name": "layit",
+  "version": "0.0.1",
+  "description": "Jeff's css layout framework.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "sass src/layit.scss examples/layit.css",
+    "watch": "sass --watch src/layit.scss:examples/layit.css"
+  },
+  "keywords": [
+    "css",
+    "layout",
+    "layit",
+    "sass"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffwcx/layit.git"
+  },
+  "author": "jeffwang",
+  "license": "MIT"
+}
