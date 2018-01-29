@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100%;
+  overflow: auto;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
+.scroller {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.item {
+  padding: 20px 0;
+}
+.h-100 {
+  height: 100px;
+}
+.h-200 {
+  height: 200px;
+}
+.h-400 {
+  height: 400px;
+}
+.w-50 {
+  width: 50px;
+}
+.w-100 {
+  width: 100px;
+}
+.w-300 {
+  width: 400px;
+}
+.w-600 {
+  width: 600px;
+}
+.w-2-1 {
+  width: 50%;
+}
+.item h2 {
+  line-height: 30px;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.c1 {
+  background: #ffe58f;
+}
+.c2 {
+  background: #fffb8f;
+}
+.c3 {
+  background: #eaff8f;
+}
+.c4 {
+  background: #ffa39e;
+}
+.c5 {
+  background: #b7eb8f;
+}
+.c6 {
+  background: #87e8de;
+}
+.c7 {
+  background: #91d5ff;
+}
+.c8 {
+  background: #adc6ff;
+}
+.c9 {
+  background: #d3adf7;
+}
+.is-25 {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+.is-50 {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.is-75 {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+}
+.is-125 {
+  width: 125px;
+  height: 125px;
+  line-height: 125px;
+}
+.is-150 {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+}
+.is-175 {
+  width: 175px;
+  height: 175px;
+  line-height: 175px;
+}
+.is-200 {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
+.is-250 {
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+}
+.inner {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,209 @@
+/*
+* Copyright 2018 Jeff Wang. All rights reserved.
+* Licensed under MIT.
+*/
+.l-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.l-row.x-left {
+  justify-content: flex-start;
+}
+.l-row.x-right {
+  justify-content: flex-end;
+}
+.l-row.x-center {
+  justify-content: center;
+}
+.l-row.x-between {
+  justify-content: space-between;
+}
+.l-row.x-around {
+  justify-content: space-around;
+}
+.l-row.y-top {
+  align-items: flex-start;
+}
+.l-row.y-bottom {
+  align-items: flex-end;
+}
+.l-row.y-center {
+  align-items: center;
+}
+.l-row.y-baseline {
+  align-items: baseline;
+}
+.l-row.y-stretch {
+  align-items: stretch;
+}
+.l-row.m-top {
+  align-content: flex-start;
+}
+.l-row.m-bottom {
+  align-content: flex-end;
+}
+.l-row.m-center {
+  align-content: center;
+}
+.l-row.m-between {
+  align-content: space-between;
+}
+.l-row.m-around {
+  align-content: space-around;
+}
+.l-row.m-stretch {
+  align-content: stretch;
+}
+.l-row.is-multi {
+  flex-wrap: wrap;
+}
+
+.unit {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.unit.is-1-12 {
+  flex-basis: 8.3333333333%;
+}
+.unit.is-2-12 {
+  flex-basis: 16.6666666667%;
+}
+.unit.is-1-6 {
+  flex-basis: 16.6666666667%;
+}
+.unit.is-3-12 {
+  flex-basis: 25%;
+}
+.unit.is-1-4 {
+  flex-basis: 25%;
+}
+.unit.is-4-12 {
+  flex-basis: 33.3333333333%;
+}
+.unit.is-1-3 {
+  flex-basis: 33.3333333333%;
+}
+.unit.is-5-12 {
+  flex-basis: 41.6666666667%;
+}
+.unit.is-6-12 {
+  flex-basis: 50%;
+}
+.unit.is-1-2 {
+  flex-basis: 50%;
+}
+.unit.is-7-12 {
+  flex-basis: 58.3333333333%;
+}
+.unit.is-8-12 {
+  flex-basis: 66.6666666667%;
+}
+.unit.is-2-3 {
+  flex-basis: 66.6666666667%;
+}
+.unit.is-9-12 {
+  flex-basis: 75%;
+}
+.unit.is-3-4 {
+  flex-basis: 75%;
+}
+.unit.is-10-12 {
+  flex-basis: 83.3333333333%;
+}
+.unit.is-5-6 {
+  flex-basis: 83.3333333333%;
+}
+.unit.is-11-12 {
+  flex-basis: 91.6666666667%;
+}
+.unit.is-12-12 {
+  flex-basis: 100%;
+}
+.unit.is-1-1 {
+  flex-basis: 100%;
+}
+
+.is-no-shrink {
+  flex-shrink: 0;
+}
+
+.is-grow {
+  flex-grow: 1;
+}
+
+.is-origin {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.units-gap {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.units-gap > .unit {
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.units-gap-2 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.units-gap-2 > .unit {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.units-gap-3 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.units-gap-3 > .unit {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.units-gap-4 {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.units-gap-4 > .unit {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.units-gap-5 {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.units-gap-5 > .unit {
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.l-col {
+  display: flex;
+  flex-flow: column wrap;
+}
+.l-col.x-left {
+  justify-content: flex-start;
+}
+.l-col.x-right {
+  justify-content: flex-end;
+}
+.l-col.x-center {
+  justify-content: center;
+}
+.l-col.x-between {
+  justify-content: space-between;
+}
+.l-col.x-around {
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=layit.css.map */

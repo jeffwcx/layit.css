@@ -7,8 +7,8 @@
     "example": "examples"
   },
   "scripts": {
-    "build": "sass src/layit.scss examples/layit.css",
-    "watch": "sass --watch src/layit.scss:examples/layit.css"
+    "build": "sass src/layit.scss lib/layit.css --style expanded",
+    "watch": "sass --watch src/layit.scss:lib/layit.css"
   },
   "keywords": [
     "css",
