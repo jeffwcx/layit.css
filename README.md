@@ -1,7 +1,9 @@
-# Layit
+# layit.css
 
-## Just lay it!
+This is my CSS layout framework.
 
-## Jeff's CSS layout framework base on flex. You can also create a framework according it.
+## TODO
 
-## Not release, do not use it! ⚠️
+1. gulp build system
+2. autoprefixer
+3. test
