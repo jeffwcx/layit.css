@@ -1,0 +1,19 @@
+
+// modifier module
+
+.is-multi{
+  flex-wrap: wrap;
+}
+
+.is-no-shrink {
+  flex-shrink: 0;
+}
+
+.is-grow {
+  flex-grow: 1;
+}
+
+.is-origin {
+  flex-shrink: 0;
+  flex-grow: 0;
+}

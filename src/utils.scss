@@ -1,0 +1,17 @@
+// utils module
+
+// Get two number's common divisor
+// @param $n1 Integer
+// @param $n2 Integer
+@function getCommonDivisor ($n1, $n2) {
+  @if $n1 == $n2 {
+    @return $n2;
+  }
+  $result: 1;
+  @for $i from 2 through ceil($n2 / 2) {
+    @if $n1 % $i == 0 and $n2 % $i == 0 and $i > $result {
+      $result: $i;
+    }
+  }
+  @return $result;
+}

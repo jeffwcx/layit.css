@@ -7,147 +7,141 @@
   <title>栅栏格</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../lib/layit.css">
+  <style>
+    .unit {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>栅栏格</h1>
     <div class="item">
+      <h2>.unit .is-*-*</h2>
+      <div class="l-row">
+        <div class="unit is-3-12 box c1">.unit .is-3-12</div>
+        <div class="unit is-3-12 box c7">.unit .is-3-12</div>
+        <div class="unit is-3-12 box c5">.unit .is-3-12</div>
+        <div class="unit is-3-12 box c4">.unit .is-3-12</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="l-row">
+        <div class="unit is-2-12 box c1">.unit .is-2-12</div>
+        <div class="unit is-4-12 box c7">.unit .is-4-12</div>
+        <div class="unit is-6-12 box c5">.unit .is-6-12</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="l-row">
+        <div class="unit is-1-12 box c1">.unit is-1-12</div>
+        <div class="unit is-2-12 box c7">.unit is-2-12</div>
+        <div class="unit is-3-12 box c5">.unit is-3-12</div>
+        <div class="unit is-4-12 box c4">.unit is-4-12</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>.is-origin</h2>
+      <div class="l-row">
+        <div class="unit is-1-6 box c1">.unit .is-1-6</div>
+        <div class="unit is-1-4 box c7">.unit .is-1-4</div>
+        <div class="h-100 is-origin c5">.is-origin</div>
+        <div class="h-100 is-origin c4">.is-origin</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>.unit</h2>
+      <div class="l-row">
+        <div class="unit box c1">.unit</div>
+        <div class="unit box c7">.unit</div>
+        <div class="unit box c5">.unit</div>
+        <div class="unit box c4">.unit</div>
+        <div class="unit box c3">.unit</div>
+        <div class="unit box c6">.unit</div>
+        <div class="unit box c9">.unit</div>
+        <div class="unit box c1">.unit</div>
+        <div class="unit box c7">.unit</div>
+        <div class="unit box c5">.unit</div>
+      </div>
+    </div>
+    <div class="item">
       <div class="scroller">
+        <h2>.is-no-shrink</h2>
         <div class="l-row">
-          <div class="unit is-3-12 box c1">unit-3-12</div>
-          <div class="unit is-3-12 box c7">unit-3-12</div>
-          <div class="unit is-3-12 box c5">unit-3-12</div>
-          <div class="unit is-3-12 box c4">unit-3-12</div>
+          <div class="unit is-1-1 is-no-shrink box c1">.is-no-shrink.unit.is-1-1</div>
+          <div class="unit is-1-1 is-no-shrink box c7">.is-no-shrink.unit.is-1-1</div>
+          <div class="unit is-1-1 is-no-shrink box c5">.is-no-shrink.unit.is-1-1</div>
+          <div class="unit is-1-1 is-no-shrink box c4">.is-no-shrink.unit.is-1-1</div>
         </div>
       </div>
     </div>
     <div class="item">
-      <div class="scroller">
-        <div class="l-row">
-          <div class="unit is-2-12 box c1">unit-2-12</div>
-          <div class="unit is-4-12 box c7">unit-4-12</div>
-          <div class="unit is-6-12 box c5">unit-6-12</div>
+      <h2>.units-gap</h2>
+      <div class="l-row units-gap">
+        <div class="unit is-2-12 box">
+          <div class="c1">.unit.is-2-12</div>
+        </div>
+        <div class="unit is-4-12 box">
+          <div class="c7">.unit.is-4-12</div>
+        </div>
+        <div class="unit is-6-12 box">
+          <div class="c5">.unit.is-6-12</div>
         </div>
       </div>
     </div>
     <div class="item">
-      <div class="scroller">
-        <div class="l-row">
-          <div class="unit is-1-12 h-100 c1">unit-1-12</div>
-          <div class="unit is-2-12 h-100 c7">unit-2-12</div>
-          <div class="unit is-3-12 h-100 c5">unit-3-12</div>
-          <div class="unit is-4-12 h-100 c4">unit-4-12</div>
+      <h2>.unit-gap-2</h2>
+      <div class="l-row units-gap-2">
+        <div class="unit is-2-12 box">
+          <div class="c1">.unit.is-2-12</div>
+        </div>
+        <div class="unit is-4-12 box">
+          <div class="c7">.unit.is-4-12</div>
+        </div>
+        <div class="unit is-6-12 box">
+          <div class="c5">.unit.is-6-12</div>
         </div>
       </div>
     </div>
     <div class="item">
-      <div class="scroller">
-        <div class="l-row">
-          <div class="unit is-1-6 h-100 c1">unit-1-6</div>
-          <div class="unit is-1-4 h-100 c7">unit-1-4</div>
-          <div class="h-100 is-origin c5">is-origin, 固定宽度</div>
-          <div class="h-100 is-origin c4">is-origin, 固定宽度</div>
+      <h2>.unit-gap-3</h2>
+      <div class="l-row units-gap-3">
+        <div class="unit is-2-12 box">
+          <div class="c1">.unit.is-2-12</div>
+        </div>
+        <div class="unit is-4-12 box">
+          <div class="c7">.unit.is-4-12</div>
+        </div>
+        <div class="unit is-6-12 box">
+          <div class="c5">.unit.is-6-12</div>
         </div>
       </div>
     </div>
     <div class="item">
-      <div class="scroller">
-        <div class="l-row">
-          <div class="unit box c1">unit</div>
-          <div class="unit box c7">unit</div>
-          <div class="unit box c5">unit</div>
-          <div class="unit box c4">unit</div>
-          <div class="unit box c3">unit</div>
-          <div class="unit box c6">unit</div>
-          <div class="unit box c9">unit</div>
-          <div class="unit box c1">unit</div>
-          <div class="unit box c7">unit</div>
-          <div class="unit box c5">unit</div>
+      <h2>.unit-gap-4</h2>
+      <div class="l-row units-gap-4">
+        <div class="unit is-2-12 box">
+          <div class="c1">.unit.is-2-12</div>
+        </div>
+        <div class="unit is-4-12 box">
+          <div class="c7">.unit.is-4-12</div>
+        </div>
+        <div class="unit is-6-12 box">
+          <div class="c5">.unit.is-6-12</div>
         </div>
       </div>
     </div>
     <div class="item">
-      <div class="scroller">
-        <div class="l-row">
-          <div class="unit is-1-1 is-no-shrink h-100 c1">.is-no-shrink, unit-1-1</div>
-          <div class="unit is-1-1 is-no-shrink h-100 c7">.is-no-shrink, unit-1-1</div>
-          <div class="unit is-1-1 is-no-shrink h-100 c5">.is-no-shrink, unit-1-1</div>
-          <div class="unit is-1-1 is-no-shrink h-100 c4">.is-no-shrink, unit-1-1</div>
+      <h2>.unit-gap-5</h2>
+      <div class="l-row units-gap-5">
+        <div class="unit is-2-12 box">
+          <div class="c1">.unit.is-2-12</div>
         </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="scroller">
-        <div class="l-row units-gap">
-          <div class="unit is-2-12 box">
-            <div class="c1">unit-2-12</div>
-          </div>
-          <div class="unit is-4-12 box">
-            <div class="c7">unit-4-12</div>
-          </div>
-          <div class="unit is-6-12 box">
-            <div class="c5">unit-6-12</div>
-          </div>
+        <div class="unit is-4-12 box">
+          <div class="c7">.unit.is-4-12</div>
         </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="scroller">
-        <div class="l-row units-gap-2">
-          <div class="unit is-2-12 box">
-            <div class="c1">unit-2-12</div>
-          </div>
-          <div class="unit is-4-12 box">
-            <div class="c7">unit-4-12</div>
-          </div>
-          <div class="unit is-6-12 box">
-            <div class="c5">unit-6-12</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="scroller">
-        <div class="l-row units-gap-3">
-          <div class="unit is-2-12 box">
-            <div class="c1">unit-2-12</div>
-          </div>
-          <div class="unit is-4-12 box">
-            <div class="c7">unit-4-12</div>
-          </div>
-          <div class="unit is-6-12 box">
-            <div class="c5">unit-6-12</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="scroller">
-        <div class="l-row units-gap-4">
-          <div class="unit is-2-12 box">
-            <div class="c1">unit-2-12</div>
-          </div>
-          <div class="unit is-4-12 box">
-            <div class="c7">unit-4-12</div>
-          </div>
-          <div class="unit is-6-12 box">
-            <div class="c5">unit-6-12</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="scroller">
-        <div class="l-row units-gap-5">
-          <div class="unit is-2-12 box">
-            <div class="c1">unit-2-12</div>
-          </div>
-          <div class="unit is-4-12 box">
-            <div class="c7">unit-4-12</div>
-          </div>
-          <div class="unit is-6-12 box">
-            <div class="c5">unit-6-12</div>
-          </div>
+        <div class="unit is-6-12 box">
+          <div class="c5">.unit.is-6-12</div>
         </div>
       </div>
     </div>
@@ -157,16 +151,19 @@
     <div class="item">
       <h2>双飞翼布局</h2>
       <div class="l-row">
-        <div class="unit is-origin w-100 h-200 c1"></div>
+        <div class="is-origin w-100 h-200 c1"></div>
         <div class="unit is-grow c7"></div>
-        <div class="unit is-origin w-100 h-200 c5"></div>
+        <div class="is-origin w-100 h-200 c5"></div>
       </div>
     </div>
     <div class="item">
-      <h2>多行布局</h2>
+      <h2>多行内嵌布局</h2>
       <div class="l-row units-gap is-multi">
         <div class="unit is-1-3 h-100">
-          <div class="inner c1"></div>
+          <div class="inner c1 l-row">
+            <div class="unit is-1-2 c5 h-100"></div>
+            <div class="unit is-1-2 c7 h-100"></div>
+          </div>
         </div>
         <div class="unit is-1-3 h-100">
           <div class="inner c2"></div>

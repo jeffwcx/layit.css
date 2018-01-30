@@ -1,0 +1,56 @@
+// unit module
+
+$units: 12 !default;
+$level: 5 !default;
+$rate: 0.25rem !default;
+
+@mixin unit ($units) {
+  @for $i from 1 through $units {
+    &.is-#{$i}-#{$units} {
+      flex-basis: percentage($number: $i / $units);
+    }
+    $commonDivisor: getCommonDivisor($i, $units);
+    @if $commonDivisor != 1 {
+      $i-x: $i / $commonDivisor;
+      $units-x: $units / $commonDivisor;
+      &.is-#{$i-x}-#{$units-x} {
+        flex-basis: percentage($number: $i-x / $units-x);
+      }
+    }
+  }
+}
+
+@mixin gap ($rate, $level) {
+  @for $i from 1 through $level {
+    @if $i == 1 {
+      .units-gap {
+        margin-left: -$rate;
+        margin-right: -$rate;
+        >.unit {
+          box-sizing: border-box;
+          padding-left: $rate;
+          padding-right: $rate;
+        }
+      }
+    } @else {
+      $gap: $i * $rate;
+      .units-gap-#{$i} {
+        margin-left: -$gap;
+        margin-right: -$gap;
+        >.unit {
+          box-sizing: border-box;
+          padding-left: $gap;
+          padding-right: $gap;
+        }
+      }
+    }
+  }
+}
+
+.unit {
+  flex-grow: 0;
+  flex-shrink: 1;
+  @include unit($units);
+}
+
+@include gap($rate, $level);

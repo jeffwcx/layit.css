@@ -1,0 +1,74 @@
+
+// layout module
+
+$prefix: "l-" !default;
+
+$row-x-dirs: (
+  left: flex-start,
+  right: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around
+);
+$row-y-dirs: (
+  top: flex-start,
+  bottom: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+);
+$row-m-dirs: (
+  top: flex-start,
+  bottom: flex-end,
+  center: center,
+  between: space-between,
+  around:space-around,
+  stretch: stretch
+);
+
+$col-x-dirs: (
+  left: flex-start,
+  right: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+);
+$col-y-dirs: (
+  top: flex-start,
+  bottom: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around
+);
+$col-m-dirs: (
+  left: flex-start,
+  right: flex-end,
+  center: center,
+  between: space-between,
+  around:space-around,
+  stretch: stretch
+);
+
+@mixin mapDir ($direction, $dirmap, $prop) {
+  @each $dirname, $dir in $dirmap {
+    &.#{$direction}-#{$dirname} {
+      #{$prop}: $dir;
+    }
+  }
+}
+
+.#{$prefix}row {
+  display: flex;
+  flex-flow: row nowrap;
+  @include mapDir(x, $row-x-dirs, justify-content);
+  @include mapDir(y, $row-y-dirs, align-items);
+  @include mapDir(m, $row-m-dirs, align-content);
+}
+
+.#{$prefix}col {
+  display: flex;
+  flex-flow: column nowrap;
+  @include mapDir(x, $col-x-dirs, align-items);
+  @include mapDir(y, $col-y-dirs, justify-content);
+  @include mapDir(m, $col-m-dirs, align-content);
+}

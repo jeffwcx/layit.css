@@ -5,8 +5,173 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>列布局</title>
+  <link rel="stylesheet" href="../lib/layit.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <h1>列布局</h1>
+    <div class="item">
+      <h2>单列</h2>
+      <div class="l-col h-400">
+        <div class="box c1"></div>
+        <div class="box c2"></div>
+        <div class="box c3"></div>
+        <div class="box c4"></div>
+        <div class="box c5"></div>
+        <div class="box c6"></div>
+        <div class="box c7"></div>
+        <div class="box c8"></div>
+        <div class="box c9"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>x轴居中</h2>
+      <div class="l-col x-center h-400">
+        <div class="box c1"></div>
+        <div class="box c2"></div>
+        <div class="box c3"></div>
+        <div class="box c4"></div>
+        <div class="box c5"></div>
+        <div class="box c6"></div>
+        <div class="box c7"></div>
+        <div class="box c8"></div>
+        <div class="box c9"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>x轴居右</h2>
+      <div class="l-col x-right h-400">
+        <div class="box c1"></div>
+        <div class="box c2"></div>
+        <div class="box c3"></div>
+        <div class="box c4"></div>
+        <div class="box c5"></div>
+        <div class="box c6"></div>
+        <div class="box c7"></div>
+        <div class="box c8"></div>
+        <div class="box c9"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>x轴stretch</h2>
+      <div class="l-col x-stretch h-200">
+        <div class="c1 h-100">A</div>
+        <div class="c2 h-100">B</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>y轴置顶</h2>
+      <div class="l-col y-top h-400 c7">
+        <div class="box c1">A</div>
+        <div class="box c2">B</div>
+        <div class="box c3">C</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>y轴置底</h2>
+      <div class="l-col y-bottom h-400 c7">
+        <div class="box c1">A</div>
+        <div class="box c2">B</div>
+        <div class="box c3">C</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>y轴居中</h2>
+      <div class="l-col y-center h-400 c7">
+        <div class="box c1">A</div>
+        <div class="box c2">B</div>
+        <div class="box c3">C</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>y轴between</h2>
+      <div class="l-col y-between h-400 c7">
+        <div class="box c1">A</div>
+        <div class="box c2">B</div>
+        <div class="box c3">C</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>y轴around</h2>
+      <div class="l-col y-around h-400 c7">
+        <div class="box c1">A</div>
+        <div class="box c2">B</div>
+        <div class="box c3">C</div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>多列</h2>
+      <div class="l-col is-multi h-400">
+        <div class="box c1"></div>
+        <div class="box c2"></div>
+        <div class="box c3"></div>
+        <div class="box c4"></div>
+        <div class="box c5"></div>
+        <div class="box c6"></div>
+        <div class="box c7"></div>
+        <div class="box c8"></div>
+        <div class="box c9"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>多列居中</h2>
+      <div class="l-col is-multi m-center h-400">
+        <div class="box c1"></div>
+        <div class="box c2"></div>
+        <div class="box c3"></div>
+        <div class="box c4"></div>
+        <div class="box c5"></div>
+        <div class="box c6"></div>
+        <div class="box c7"></div>
+        <div class="box c8"></div>
+        <div class="box c9"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>多列居左</h2>
+      <div class="l-col is-multi m-left h-400">
+        <div class="box c1"></div>
+        <div class="box c2"></div>
+        <div class="box c3"></div>
+        <div class="box c4"></div>
+        <div class="box c5"></div>
+        <div class="box c6"></div>
+        <div class="box c7"></div>
+        <div class="box c8"></div>
+        <div class="box c9"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>多列居右</h2>
+      <div class="l-col is-multi m-right h-400">
+        <div class="box c1"></div>
+        <div class="box c2"></div>
+        <div class="box c3"></div>
+        <div class="box c4"></div>
+        <div class="box c5"></div>
+        <div class="box c6"></div>
+        <div class="box c7"></div>
+        <div class="box c8"></div>
+        <div class="box c9"></div>
+      </div>
+    </div>
+    <div class="item">
+      <h2>.is-no-shrink</h2>
+      <div class="scroller">
+        <div class="l-col m-right h-400">
+          <div class="box unit is-no-shrink c1"></div>
+          <div class="box unit is-no-shrink c2"></div>
+          <div class="box unit is-no-shrink c3"></div>
+          <div class="box unit is-no-shrink c4"></div>
+          <div class="box unit is-no-shrink c5"></div>
+          <div class="box unit is-no-shrink c6"></div>
+          <div class="box unit is-no-shrink c7"></div>
+          <div class="box unit is-no-shrink c8"></div>
+          <div class="box unit is-no-shrink c9"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
