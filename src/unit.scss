@@ -4,17 +4,17 @@ $units: 12 !default;
 $level: 5 !default;
 $rate: 0.25rem !default;
 
-@mixin unit ($units) {
-  @for $i from 1 through $units {
-    &.is-#{$i}-#{$units} {
-      flex-basis: percentage($number: $i / $units);
+@mixin unit ($un) {
+  @for $i from 1 through $un {
+    &.is-#{$i}-#{$un} {
+      flex-basis: percentage($number: $i / $un);
     }
-    $commonDivisor: getCommonDivisor($i, $units);
+    $commonDivisor: getCommonDivisor($i, $un);
     @if $commonDivisor != 1 {
       $i-x: $i / $commonDivisor;
-      $units-x: $units / $commonDivisor;
-      &.is-#{$i-x}-#{$units-x} {
-        flex-basis: percentage($number: $i-x / $units-x);
+      $un-x: $un / $commonDivisor;
+      &.is-#{$i-x}-#{$un-x} {
+        flex-basis: percentage($number: $i-x / $un-x);
       }
     }
   }

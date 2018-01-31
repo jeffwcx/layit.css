@@ -2,13 +2,13 @@
   "name": "layit",
   "version": "0.0.1",
   "description": "Jeff's css layout framework.",
-  "main": "index.js",
+  "main": "src/index.scss",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "build": "sass src/index.scss lib/layit.css --style expanded",
-    "watch": "sass --watch src/index.scss:lib/layit.css"
+    "build": "gulp clean && gulp css && gulp minifyCSS",
+    "dev": "gulp dev"
   },
   "keywords": [
     "css",
@@ -21,5 +21,15 @@
     "url": "https://github.com/jeffwcx/layit.git"
   },
   "author": "jeffwang",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-sass": "^4.1.1"
+  }
 }
