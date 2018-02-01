@@ -1,6 +1,6 @@
 # layit.css
 
-[英文](./README-EN.md) | [中文](./README.md)
+[English](./README-EN.md) | [中文](./README.md)
 
 基于Flexbox的CSS布局框架，简单，易学
 
@@ -25,11 +25,11 @@ npm i -S layit.css
 
 ## 使用
 
-+ [行布局Demo](https://jeffwcx.github.io/layit/examples/row.html)
++ [行布局Demo](https://jeffwcx.github.io/layit.css/examples/row.html)
 
-+ [栅栏格系统Demo](https://jeffwcx.github.io/layit/examples/grid.html)
++ [栅栏格系统Demo](https://jeffwcx.github.io/layit.css/examples/grid.html)
 
-+ [列布局Demo](https://jeffwcx.github.io/layit/examples/col.html)
++ [列布局Demo](https://jeffwcx.github.io/layit.css/examples/col.html)
 
 ## 定制
 

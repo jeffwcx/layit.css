@@ -1,7 +1,7 @@
 {
-  "name": "layit",
-  "version": "0.0.1",
-  "description": "Simple Layout Framework Based on Flexbox.",
+  "name": "layit.css",
+  "version": "0.1.2",
+  "description": "Simple Layout Framework Based On Flexbox.",
   "main": "src/index.scss",
   "directories": {
     "example": "examples"
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeffwcx/layit.git"
+    "url": "https://github.com/jeffwcx/layit.css.git"
   },
   "author": "jeffwang",
   "license": "MIT",

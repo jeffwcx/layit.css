@@ -1,6 +1,6 @@
 # layit.css
 
-[English](./README-EN.md) | [Chinese](./README.md)
+[English](./README-EN.md) | [中文](./README.md)
 
 Simple Layout Framework Based On Flexbox.
 
@@ -24,11 +24,11 @@ npm i -S layit.css
 
 ## Usage
 
-+ [row layout demo](https://jeffwcx.github.io/layit/examples/row.html)
++ [row layout demo](https://jeffwcx.github.io/layit.css/examples/row.html)
 
-+ [grid system demo](https://jeffwcx.github.io/layit/examples/grid.html)
++ [grid system demo](https://jeffwcx.github.io/layit.css/examples/grid.html)
 
-+ [col layout demo](https://jeffwcx.github.io/layit/examples/col.html)
++ [col layout demo](https://jeffwcx.github.io/layit.css/examples/col.html)
 
 ## Customization
 
