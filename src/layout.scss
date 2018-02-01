@@ -49,7 +49,7 @@ $col-m-dirs: (
   stretch: stretch
 );
 
-// map flex property to normal property
+// mapping flex property to normal property
 @mixin mapDir ($direction, $dirmap, $prop) {
   @each $dirname, $dir in $dirmap {
     &.#{$direction}-#{$dirname} {

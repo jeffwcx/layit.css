@@ -5,6 +5,7 @@ const autoprefixer = require('gulp-autoprefixer')
 const del = require('del')
 const rename = require('gulp-rename')
 const minifyCSS = require('gulp-csso')
+const mocha = require('gulp-mocha')
 
 
 gulp.task('clean', () => {
@@ -38,4 +39,12 @@ gulp.task('minifyCSS', () => {
 // dev
 gulp.task('dev', () => {
   return gulp.watch('./src/*.scss', ['build'])
+})
+
+// test
+gulp.task('test', () => {
+  return gulp.src('./test/index.js')
+    .pipe(mocha({
+      reporter: 'spec'
+    }))
 })

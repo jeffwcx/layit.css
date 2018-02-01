@@ -4,17 +4,20 @@ $units: 12 !default;
 $level: 5 !default;
 $rate: 0.25rem !default;
 
-@mixin unit ($un) {
-  @for $i from 1 through $un {
-    &.is-#{$i}-#{$un} {
-      flex-basis: percentage($number: $i / $un);
+@mixin unit ($n) {
+  @if $n < 2 {
+    @error "$unit variable can not < 2!";
+  }
+  @for $i from 1 through $n {
+    &.is-#{$i}-#{$n} {
+      flex-basis: percentage($number: $i / $n);
     }
-    $commonDivisor: getCommonDivisor($i, $un);
+    $commonDivisor: getCommonDivisor($i, $n);
     @if $commonDivisor != 1 {
-      $i-x: $i / $commonDivisor;
-      $un-x: $un / $commonDivisor;
-      &.is-#{$i-x}-#{$un-x} {
-        flex-basis: percentage($number: $i-x / $un-x);
+      $ix: $i / $commonDivisor;
+      $nx: $n / $commonDivisor;
+      &.is-#{$ix}-#{$nx} {
+        flex-basis: percentage($number: $ix / $nx);
       }
     }
   }

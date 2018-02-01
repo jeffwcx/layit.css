@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "gulp clean && gulp css && gulp minifyCSS",
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "test": "gulp test"
   },
   "keywords": [
     "css",
@@ -23,10 +24,12 @@
   "author": "jeffwang",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.1.2",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-csso": "^3.0.1",
+    "gulp-mocha": "^5.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "gulp-sourcemaps": "^2.6.4",
