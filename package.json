@@ -1,7 +1,7 @@
 {
   "name": "layit",
   "version": "0.0.1",
-  "description": "Jeff's css layout framework.",
+  "description": "Simple Layout Framework Based on Flexbox.",
   "main": "src/index.scss",
   "directories": {
     "example": "examples"
