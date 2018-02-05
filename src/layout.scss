@@ -58,7 +58,7 @@ $col-m-dirs: (
   }
 }
 
-.#{$prefix}row {
+@mixin row () {
   display: flex;
   flex-flow: row nowrap;
   @include mapDir(x, $row-x-dirs, justify-content);
@@ -66,10 +66,18 @@ $col-m-dirs: (
   @include mapDir(m, $row-m-dirs, align-content);
 }
 
-.#{$prefix}col {
+.#{$prefix}row {
+  @include row();
+}
+
+@mixin col () {
   display: flex;
   flex-flow: column nowrap;
   @include mapDir(x, $col-x-dirs, align-items);
   @include mapDir(y, $col-y-dirs, justify-content);
   @include mapDir(m, $col-m-dirs, align-content);
+}
+
+.#{$prefix}col {
+  @include col();
 }
