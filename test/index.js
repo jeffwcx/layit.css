@@ -35,4 +35,15 @@ describe('layout', () => {
     expect(result).to.include('.grid-col')
   })
 
+  it('mixin', () => {
+    const result = sass.renderSync({
+      file: './test/cases/layout/mixin.scss'
+    }).css.toString()
+    expect(result).to.match(/\.row-x\s*{\s*[\s\S]*?justify-content:\s*center;/)
+    expect(result).to.match(/\.row-y\s*{\s*[\s\S]*?align-items:\s*flex-start;/)
+    expect(result).to.match(/\.row-m\s*{\s*[\s\S]*?align-content:\s*flex-end;/)
+    expect(result).to.match(/\.col-x\s*{\s*[\s\S]*?align-items:\s*center;/)
+    expect(result).to.match(/\.col-y\s*{\s*[\s\S]*?justify-content:\s*flex-start;/)
+    expect(result).to.match(/\.col-m\s*{\s*[\s\S]*?align-content:\s*flex-start;/)
+  })
 })

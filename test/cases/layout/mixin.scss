@@ -1,0 +1,24 @@
+@import "../../../src/layout";
+.row-x {
+  @include row-x(center);
+}
+
+.row-y {
+  @include row-y(top);
+}
+
+.row-m {
+  @include row-m(bottom);
+}
+
+.col-x {
+  @include col-x(center);
+}
+
+.col-y {
+  @include col-y(top);
+}
+
+.col-m {
+  @include col-m(left);
+}
